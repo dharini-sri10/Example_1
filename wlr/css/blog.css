@@ -1,0 +1,462 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.center {
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    background-color: #103f1bdb;
+    top: 0;
+    padding: 8px 0px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.links {
+    text-decoration: none;
+    color: #FFF5CF;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 1s;
+    padding: 10px 20px;
+
+}
+
+.links:hover {
+    background-color: #FFF5CF;
+    color: #133919;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.navbar ul {
+    width: 50%;
+    padding: 10px;
+}
+
+.container {
+    height: 85vh;
+    background-image: url("../img/blogs");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF5CF;
+    text-align: center;
+    padding: 20px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+.text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #FFF5CF;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.btn_new {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #133919;
+    color: #FFF5CF;
+}
+
+.btn_text {
+    color: #333;
+    background-color: transparent;
+    border: 2px solid #FFF5CF;
+
+
+}
+
+.para {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: clip;
+    padding: 5% 0px;
+}
+
+
+
+.text1 {
+    font-size: 50px;
+    font-style: normal;
+    margin-left: 40px;
+    animation: TextOpacity 2s linear;
+}
+
+.text {
+    padding: 20px;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.container1 {
+    background-image: url("../img/recycle1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 10% 0px;
+
+}
+
+.container-top {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.reach {
+    width: 40%;
+    font-size: 23px;
+    color: #FFF5CF;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.para1 {
+    padding: 40px 0px;
+}
+
+.heading {
+    display: flex;
+
+}
+
+.heading1>div {
+    display: flex;
+    gap: 20PX;
+
+}
+
+.heading1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.heading2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: none;
+}
+
+.inputField {
+    padding: 20px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.form-container {
+    width: 90%;
+
+}
+
+.inputField::placeholder {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.colour {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    background-color: #133919;
+    color: #FFF5CF;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.button1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: #FFF5CF;
+    border-radius: 10px;
+    width: 80%;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background: url("../img/welovebg.png");
+    font-size: 28px;
+    padding: 10px 20px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.para img {
+    width: 550px;
+    position: relative;
+    animation: moveRight 4s linear;
+}
+
+.rightImg {
+    position: relative;
+    animation: moveLeft 4s  linear !important;
+}
+
+
+/* ***********************************************page 2 *********************************************** */
+
+
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        left: -100%;
+    }
+
+    50% {
+        opacity: 0.5;
+        left: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        right: -100%;
+    }
+
+    50% {
+        opacity: 0.5;
+        right: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0%;
+
+    }
+}
+
+@keyframes TextOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .navlinks {
+        display: none;
+    }
+
+    .container,
+    .container-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wasteManagement_container {
+        flex-direction: column-reverse;
+    }
+
+    .commitment_container {
+
+        flex-direction: column;
+    }
+
+    .para img {
+        width: 100%;
+    }
+
+    .text1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .text {
+        padding: 20px;
+        font-size: 25px;
+        margin-left: 0px;
+    }
+
+    .reach {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .form {
+        width: 70%;
+        padding: 5%;
+
+    }
+
+    .ECO_container {
+        flex-direction: column-reverse;
+    }
+
+    .content1 {
+
+        width: 100%;
+        font-size: 16px;
+        padding: 21px 5px;
+    }
+
+}
+
+@media screen and (max-width: 428px) {
+    .navlinks {
+        display: none;
+    }
+
+    .container,
+    .container-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wasteManagement_container {
+        flex-direction: column-reverse;
+    }
+
+    .commitment_container {
+
+        flex-direction: column;
+    }
+
+    .para img {
+        width: 100%;
+    }
+
+    .text1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .text {
+        padding: 20px;
+        font-size: 25px;
+        margin-left: 0px;/
+    }
+
+    .reach {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .form {
+        width: 70%;
+        padding: 5%;
+
+    }
+
+    .ECO_container {
+        flex-direction: column-reverse;
+    }
+
+    .content1 {
+
+        width: 100%;
+        font-size: 16px;
+        padding: 21px 5px;
+    }
+
+}
