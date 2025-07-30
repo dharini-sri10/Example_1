@@ -12,6 +12,7 @@
     background-color: #103f1bdb;
     top: 0;
     padding: 8px 0px;
+    z-index: 999 !important;
 
 }
 

@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.style{
+
+.style {
     font-size: 20px;
 }
 
@@ -36,6 +37,38 @@
     overflow: hidden;
 }
 
+.menu-btn {
+    display: none;
+}
+
+.mobile-nav li a{
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.mobile-nav li{
+    margin-bottom: 30px !important;
+    padding: 10px 30px;
+    
+}
+.mobile-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 40px 30px;
+}
+
+.mobile-navBar {
+    width: 50%;
+    height: 100vh;
+    background-color: #103f1b;
+    position: fixed;
+    z-index: 99;
+    right: -100%;
+    top: 0;
+}
+
 .cardHeader {
     position: absolute;
     font-size: 1.5vw;
@@ -52,7 +85,7 @@
     font-weight: 700;
     bottom: 40%;
     transition: .5s ease-in-out;
-    z-index: 99;
+    z-index: 1;
 
 }
 
@@ -120,13 +153,15 @@
     border-radius: 10px;
 
 }
+
 .blackshadows>h2 {
     color: #28a745;
     padding: 10px;
     border-radius: 10px;
 
 }
-.header{
+
+.header {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, .6);
@@ -135,7 +170,8 @@
     justify-content: center;
     flex-direction: column;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -144,12 +180,14 @@
     align-items: center;
     padding: 10px 20px;
 }
-.btn_text{
+
+.btn_text {
     color: #333;
     background-color: transparent;
     border: 2px solid #FFF5CF;
 }
-.btn_new{
+
+.btn_new {
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -157,27 +195,35 @@
     background-color: #133919;
     color: #FFF5CF;
 }
+
 @media screen and (max-width:768px) {
     .navlinks {
         display: none;
     }
-     .center-Container1 {
+.menu-btn {
+    display: block !important;
+}
+    .center-Container1 {
         flex-direction: column;
         padding: 0 10px;
     }
+
     .container-top {
         flex-direction: column;
         align-items: center;
     }
-     .reach {
+
+    .reach {
         width: 90%;
         padding: 5%;
     }
+
     .form {
         width: 70%;
         padding: 5%;
 
     }
+
     .content1 {
 
         width: 100%;
@@ -185,27 +231,33 @@
         padding: 21px 5px;
     }
 }
+
 @media screen and (max-width:428px) {
     .navlinks {
         display: none;
     }
-     .center-Container1 {
+
+    .center-Container1 {
         flex-direction: column;
         padding: 0 10px;
     }
+
     .container-top {
         flex-direction: column;
         align-items: center;
     }
-     .reach {
+
+    .reach {
         width: 90%;
         padding: 5%;
     }
+
     .form {
         width: 70%;
         padding: 5%;
 
     }
+
     .content1 {
 
         width: 100%;
