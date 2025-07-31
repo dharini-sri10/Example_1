@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhyRecycle</title>
     <link rel="stylesheet" href="./css/website.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-      <nav class="navbar">
+    <nav class="navbar">
         <a href="./index.html">
             <img src="./img/navbar_logo.png" alt="Navbar_Logo" class="logo">
         </a>
@@ -165,7 +166,17 @@
             </div>
         </div>
     </div>
-
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        function showSidebar() {
+            const sidebar = document.querySelector('.navlinks')
+            sidebar.style.display = 'flex';
+        }
+        menuBtn.addEventListener('click', () => {
+            const mobileContainer = document.querySelector('.mobile-navBar')
+            mobileContainer.style.right = '0px';
+        })
+    </script>
 
 </body>
 

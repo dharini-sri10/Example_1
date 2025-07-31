@@ -10,13 +10,14 @@
     background-color: #103f1bdb;
     top: 0;
     padding: 8px 0px;
-    z-index: 99;
+    z-index: 999 !important;
+
 }
+
 .navlinks {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
-
 }
 
 .links {
@@ -26,7 +27,6 @@
     font-weight: 400;
     transition: 1s;
     padding: 10px 20px;
-
 }
 
 .links:hover {
@@ -40,6 +40,8 @@
     width: 50%;
     padding: 10px;
 }
+
+
 .center {
     overflow: hidden;
 }
@@ -73,7 +75,7 @@
     color: white;
     padding: 10px;
 }
-.button{
+.button {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -82,12 +84,14 @@
     align-items: center;
     padding: 10px 20px;
 }
-.btn_text{
+
+.btn_text {
     color: #333;
     background-color: transparent;
     border: 2px solid #FFF5CF;
 }
-.btn_new{
+
+.btn_new {
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -95,6 +99,7 @@
     background-color: #133919;
     color: #FFF5CF;
 }
+
 .content{
     padding:70px;
     color: #133919;
@@ -346,6 +351,37 @@ label {
     position: relative;
     animation: moveLeft 4s  linear !important;
 }
+.menu-btn {
+    display: none;
+}
+
+.mobile-nav li a{
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.mobile-nav li{
+    margin-bottom: 30px !important;
+    padding: 10px 30px;
+    
+}
+.mobile-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 40px 30px;
+}
+
+.mobile-navBar {
+    width: 50%;
+    height: 100vh;
+    background-color: #103f1b;
+    position: fixed;
+    z-index: 99;
+    right: -100%;
+    top: 0;
+}
 
 
 
@@ -353,6 +389,9 @@ label {
     .navlinks {
         display: none;
     }
+.menu-btn {
+    display: block !important;
+}
     .center-Container,
     .center-Container1 {
         flex-direction: column;
@@ -391,7 +430,6 @@ label {
     .reach {
         width: 90%;
         padding: 5%;
-        align-items: center;
     }
 
     .form {
@@ -399,6 +437,7 @@ label {
         padding: 5%;
 
     }
+
     .content1 {
 
         width: 100%;
@@ -416,6 +455,9 @@ label {
     .center-Container1 {
         flex-direction: column;
         padding: 0 10px;
+    }
+    .button{
+        width: 30%;
     }
 
 

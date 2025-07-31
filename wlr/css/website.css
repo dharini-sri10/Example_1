@@ -246,11 +246,45 @@ label{
     margin: auto;
     flex-direction: column;
 }
+.menu-btn {
+    display: none;
+}
+
+.mobile-nav li a{
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.mobile-nav li{
+    margin-bottom: 30px !important;
+    padding: 10px 30px;
+    
+}
+.mobile-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 40px 30px;
+}
+
+.mobile-navBar {
+    width: 50%;
+    height: 100vh;
+    background-color: #103f1b;
+    position: fixed;
+    z-index: 99;
+    right: -100%;
+    top: 0;
+}
 
 @media screen and (max-width:768px) {
     .navlinks {
         display: none;
     }
+.menu-btn {
+    display: block !important;
+}
     .center-Container1 {
         flex-direction: column;
         padding: 0 10px;
@@ -259,10 +293,6 @@ label{
         flex-direction: column;
         align-items: center;
     }
-     .reach {
-        width: 90%;
-        padding: 5%;
-    }
     .table{
         flex-direction: column;
         display: flex;
@@ -270,12 +300,17 @@ label{
         justify-content: center;
         padding: auto;
     }
+    .reach {
+        width: 90%;
+        padding: 5%;
+    }
 
     .form {
         width: 70%;
         padding: 5%;
 
     }
+
     .content1 {
 
         width: 100%;
@@ -297,10 +332,6 @@ label{
         flex-direction: column;
         align-items: center;
     }
-     .reach {
-        width: 90%;
-        padding: 5%;
-    }
     .table{
         flex-direction: column;
         display: flex;
@@ -308,12 +339,17 @@ label{
         justify-content: center;
         padding: auto;
     }
+    .reach {
+        width: 90%;
+        padding: 5%;
+    }
 
     .form {
         width: 70%;
         padding: 5%;
 
     }
+
     .content1 {
 
         width: 100%;

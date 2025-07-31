@@ -6,7 +6,6 @@
 .center {
     overflow: hidden;
 }
-
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -15,13 +14,14 @@
     background-color: #103f1bdb;
     top: 0;
     padding: 8px 0px;
+    z-index: 999 !important;
+
 }
 
 .navlinks {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
-
 }
 
 .links {
@@ -31,7 +31,6 @@
     font-weight: 400;
     transition: 1s;
     padding: 10px 20px;
-
 }
 
 .links:hover {
@@ -46,9 +45,11 @@
     padding: 10px;
 }
 
+
+
 .container {
     height: 85vh;
-    background-image: url("../img/blogs");
+    background-image: url("../img/Blogs.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -89,6 +90,12 @@
     padding: 10px 20px;
 }
 
+.btn_text {
+    color: #333;
+    background-color: transparent;
+    border: 2px solid #FFF5CF;
+}
+
 .btn_new {
     padding: 12px 20px;
     border: none;
@@ -98,13 +105,6 @@
     color: #FFF5CF;
 }
 
-.btn_text {
-    color: #333;
-    background-color: transparent;
-    border: 2px solid #FFF5CF;
-
-
-}
 
 .para {
     width: 90%;
@@ -276,6 +276,37 @@ label {
     position: relative;
     animation: moveLeft 4s  linear !important;
 }
+.menu-btn {
+    display: none;
+}
+
+.mobile-nav li a{
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.mobile-nav li{
+    margin-bottom: 30px !important;
+    padding: 10px 30px;
+    
+}
+.mobile-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 40px 30px;
+}
+
+.mobile-navBar {
+    width: 50%;
+    height: 100vh;
+    background-color: #103f1b;
+    position: fixed;
+    z-index: 99;
+    right: -100%;
+    top: 0;
+}
 
 
 /* ***********************************************page 2 *********************************************** */
@@ -347,7 +378,9 @@ label {
     .navlinks {
         display: none;
     }
-
+.menu-btn {
+    display: block !important;
+}
     .container,
     .container-top {
         flex-direction: column;
@@ -389,16 +422,17 @@ label {
 
     }
 
-    .ECO_container {
-        flex-direction: column-reverse;
-    }
-
     .content1 {
 
         width: 100%;
         font-size: 16px;
         padding: 21px 5px;
     }
+
+    .ECO_container {
+        flex-direction: column-reverse;
+    }
+
 
 }
 
