@@ -106,16 +106,11 @@
 
 .web {
     padding: 50px;
-    width: 40%;
+    width: 50%;
     /* margin-left: 50px; */
 
 }
 
-.web_new {
-    width: 40%;
-    /* margin-left: auto; */
-    padding: 40px;
-}
 
 .table {
     font-size: 25px;
@@ -299,6 +294,10 @@ label{
         align-items: center;
         justify-content: center;
         padding: auto;
+    }
+    .web{
+        width: 100%;
+        padding: 20px;
     }
     .reach {
         width: 90%;
