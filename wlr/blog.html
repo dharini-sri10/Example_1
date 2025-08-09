@@ -7,10 +7,7 @@
     <title>Blog</title>
        <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/doyourbit.css">
-    <link rel="stylesheet" href="./css/reachOut.css">
     <link rel="stylesheet" href="./css/blog.css">
-    <link rel="stylesheet" href="./css/whyRecycle.css">
-    <!-- <link rel="stylesheet" href="./css/website.css"> -->
 </head>
 
 <body>
@@ -33,7 +30,7 @@
     </nav>
      <div class="mobile-navBar">
         <ul class="mobile-nav">
-            <button class="btn menu-button" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg"
+            <button class="btn menu-button"><svg xmlns="http://www.w3.org/2000/svg"
                         height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                         <path
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
@@ -193,13 +190,15 @@
     </div>
    <script>
         const menuBtn = document.querySelector('.menu-btn')
-        function showSidebar() {
-            const sidebar = document.querySelector('.navlinks')
-            sidebar.style.display = 'flex';
-        }
+        const mobileNavBar = document.querySelector('.menu-button');
+
         menuBtn.addEventListener('click', () => {
             const mobileContainer = document.querySelector('.mobile-navBar')
             mobileContainer.style.right = '0px';
+        })
+        mobileNavBar.addEventListener('click', () => {
+            const mobileContainer = document.querySelector('.mobile-navBar')
+            mobileContainer.style.right = '-100%';
         })
     </script>
 </body>

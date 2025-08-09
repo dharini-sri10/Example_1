@@ -101,7 +101,7 @@
 }
 
 .content{
-    padding:70px;
+    /* padding:70px; */
     color: #FFF5CF;
 }
 
@@ -109,6 +109,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #133919;
 }
 .center-Container{
     display: flex;  
@@ -256,6 +257,7 @@
     justify-content: space-between;
     padding: 10px 20px;
     gap: 10px;
+    color: #FFF5CF;
 }
 
 .heading2 {
@@ -264,6 +266,7 @@
     align-items: center;
     gap: 20px;
     padding: 10px 20px;
+    color: #FFF5CF;
 
 }
 
@@ -327,6 +330,7 @@ label {
     width: 80%;
     align-items: center;
     padding: 10px 20px;
+    width:auto;
 }
 
 .content1 {
